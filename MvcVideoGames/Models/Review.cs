@@ -1,0 +1,18 @@
+﻿namespace MvcVideoGames.Models
+{
+    public class Review
+    {
+
+        public int Id { get; set; }
+        public string UserName { get; set; }
+        public string Comment { get; set; }
+
+        public DateTime ReviewDate { get; set; }
+        public int VideoGameId { get; set; }
+        public Review()
+        {
+            ReviewDate = DateTime.Now;
+        }
+
+    }
+}
